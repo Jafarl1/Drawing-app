@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" type="text/css" />
+    <title>Drawing app</title>
+  </head>
+  <body>
+    <header class="header">Drawing app witn MVC pattern on pure JS.</header>
+    <section class="container">
+      <div class="toolbox">
+        <span class="toolbox-header">Toolbox</span>
+        <div class="tools">
+          <img src="./src/assets/icons/pencil.png" class="tool" alt="Pencil" />
+          <img src="./src/assets/icons/fill.png" class="tool" alt="Fill" />
+          <img src="./src/assets/icons/eraser.png" class="tool" alt="Eraser" />
+        </div>
+        <span class="toolbox-header">Shapes</span>
+        <div class="shapes">
+          <img src="./src/assets/icons/circle.png" class="tool" alt="Circle" />
+          <img
+            src="./src/assets/icons/rectangle.png"
+            class="tool"
+            alt="Rectangle"
+          />
+          <img
+            src="./src/assets/icons/triangle.png"
+            class="tool"
+            alt="Triangle"
+          />
+        </div>
+        <span class="toolbox-header">Colors</span>
+        <input type="color" name="black" id="color-picker" value="#000000" />
+
+        <div class="buttons">
+          <button class="toolbox-btn">Clear</button>
+          <button class="toolbox-btn">Save as image</button>
+        </div>
+      </div>
+      <canvas class="board"></canvas>
+    </section>
+    <footer class="footer">
+      The app was created by
+      <a href="https://github.com/Jafarl1" target="_blank" rel="noreferrer">
+        ©️ Zohrab Jafarli
+      </a>
+      in 2023.
+    </footer>
+    <script type="module" src="./src/index.js"></script>
+  </body>
 </html>

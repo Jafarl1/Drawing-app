@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Rakkas:regular);
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: Rakkas;
+  letter-spacing: 1px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header,
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  margin: 5px;
+}
+.container {
+  width: 90%;
+  height: 80%;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.toolbox {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toolbox img {
+  width: 40px;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.active-tool {
+  border-bottom: 1px solid black;
+}
+.toolbox-header {
+  margin-top: 25px;
+}
+.tools,
+.shapes {
+  display: flex;
+  margin-top: 15px;
+  gap: 20px;
+}
+#color-picker {
+  width: 60%;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.buttons {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.board {
+  width: 80%;
+  height: 100%;
+  background-image: url(./assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  border-left: 1px solid black;
+}
